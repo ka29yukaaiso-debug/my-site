@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- かわいいフォント -->
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+
+<title>株式会社相蘇サンプル</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  line-height: 1.6;
+  color: #355f4a;
+  background: linear-gradient(135deg, #d1fae5, #ecfdf5);
+}
+
+/* ヘッダー */
+header {
+  background: #86efac;
+  color: #134e4a;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ナビゲーション */
+nav {
+  background: #bbf7d0;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  color: #14532d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  opacity: 0.7;
+}
+
+/* セクションカード */
+section {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+h2 {
+  border-left: 6px solid #86efac;
+  padding-left: 10px;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #f0fdf4;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* フォーム */
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #bbf7d0;
+  border-radius: 8px;
+  font-family: inherit;
+}
+
+button {
+  background: #86efac;
+  color: #134e4a;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* フッター */
+footer {
+  background: #86efac;
+  color: #134e4a;
+  text-align: center;
+  padding: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>株式会社サンプル</h1>
+  <p>あなたのビジネスを支えるパートナー</p>
+</header>
+
+<nav>
+  <a href="index.html">ホーム</a>
+  <a href="about.html">会社概要</a>
+</nav>
+
+<section>
+  <h2>サービス</h2>
+  <div class="services">
+    <div class="card">
+      <h3>コンサルティング</h3>
+      <p>中小企業向けの経営支援を行います。</p>
+    </div>
+    <div class="card">
+      <h3>Web制作</h3>
+      <p>低コストで高品質なWebサイトを提供。</p>
+    </div>
+    <div class="card">
+      <h3>運用サポート</h3>
+      <p>公開後の運用も安心サポート。</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>お問い合わせ</h2>
+  <form>
+    <input type="text" placeholder="お名前" required>
+    <input type="email" placeholder="メールアドレス" required>
+    <textarea rows="5" placeholder="お問い合わせ内容" required></textarea>
+    <button type="submit">送信</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 株式会社相蘇サンプル</p>
+</footer>
+
+</body>
+</html>
